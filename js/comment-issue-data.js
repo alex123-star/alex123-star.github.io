@@ -1,6 +1,6 @@
 // 评论issues仓库 by.removeif https://removeif.github.io/
 var repoIssuesUrl = "https://api.github.com/repos/userName/userRepo/issues";
-// 对应仓库 clientId、clientSecret 关于这两个参数的安全问题，查看 https://removeif.github.io/2019/09/19/博客源码分享.html#1-热门推荐，最新评论：
+// 对应仓库 clientId、clientSecret 關於这两个参数的安全问题，查看 https://removeif.github.io/2019/09/19/博客源码分享.html#1-热门推荐，最新评论：
 var clientId;// = "46a9f3481b46ea0129d8";
 var clientSecret;// = "79c7c9cb847e141757d7864453bcbf89f0655b24";
 // var authorizationToken = 'Basic ' + btoa(clientId + ':' + clientSecret);
@@ -199,7 +199,7 @@ function loadIndexHotData(authorizationToken) {
         ajaxReqForGitHub(repoIssuesUrl + "?per_page=10&sort=comments", authorizationToken, function (result) {
 
             $.each(result, function (i, item) {
-                // 标签配色
+                // 標籤配色
                 if (i >= 0 & i < 4) {
                     classDiv = "class=\"item level3\"";
                 } else if (i >= 4 & i < 7) {

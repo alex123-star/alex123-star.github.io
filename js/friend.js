@@ -1,6 +1,6 @@
 // author by removef
 // https://removeif.github.io/
-$(function () { //获取处理友链数据
+$(function () { //获取处理友鏈数据
     ajaxReqForGitHubNoToken("https://api.github.com/repos/removeif/issue_database/issues/2/comments?per_page=100", function (data) {
         loadFriends(data);
     });
