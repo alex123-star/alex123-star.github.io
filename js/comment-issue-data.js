@@ -312,7 +312,7 @@ function loadIssueData(appId, appKey, userName, userRepo, isValine) {
             renderCommentData(COMMENT_ARR);
         }
 
-        // 首页热门推荐
+        // 首頁热门推荐
         loadIndexHotData(authorizationToken);
 
         // 装载评论数到文章对应位置
