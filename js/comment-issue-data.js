@@ -178,10 +178,14 @@ function renderCommentData(COMMENT_ARR) {
         for (var i = 0; i < COMMENT_ARR.length; i++) {
             var item = COMMENT_ARR[i];
             var contentStr = item.content;
-            htmlContentWidget +=
-                "<div class='card-comment-item'>" + "<a href=\"" + item.userUrl + "\"target=\"_blank\">" + "<img class='ava' src='" + item.userAvatar + "'/></a>" +
-                "<div class='item-header-text'><a href='" + item.userUrl + "' target='_blank'>" + item.userName + "</a>&nbsp;发表于" + getDateDiff(new Date(item.date).getTime()) + "</div>" + "<div class=\"item-text\"><a href =\"" + item.url + '#comment-container\">' + contentStr + "</a></div>" +
-                "</div>";
+            // htmlContentWidget +=
+            //     "<div class='card-comment-item'>" + "<a href=\"" + item.userUrl + "\"target=\"_blank\">" + "<img class='ava' src='" + item.userAvatar + "'/></a>" +
+            //     "<div class='item-header-text'><a href='" + item.userUrl + "' target='_blank'>" + item.userName + "</a>&nbsp;发表于" + getDateDiff(new Date(item.date).getTime()) + "</div>" + "<div class=\"item-text\"><a href =\"" + item.url + '#comment-container\">' + contentStr + "</a></div>" +
+            //     "</div>";
+              htmlContentWidget +=
+                 "<div class='card-comment-item'>" + "<a href=\"" + 链接 + "\"target=\"_blank\">" + "<img class='ava' src='" + 使用人的来链接 + "'/></a>" +
+                 "<div class='item-header-text'><a href='" + 使用人的来链接 + "' target='_blank'>" + 作者 + "</a>&nbsp;发表于" + getDateDiff(new Date().getTime()) + "</div>" + "<div class=\"item-text\"><a href =\"" + 哈哈哈 + '#comment-container\">' + 我是神 + "</a></div>" +
+                 "</div>";
         }
         htmlContentWidget += "</div>"
         $(".body_hot_comment").html(htmlContentWidget);
