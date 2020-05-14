@@ -183,8 +183,8 @@ function renderCommentData(COMMENT_ARR) {
             //     "<div class='item-header-text'><a href='" + item.userUrl + "' target='_blank'>" + item.userName + "</a>&nbsp;发表于" + getDateDiff(new Date(item.date).getTime()) + "</div>" + "<div class=\"item-text\"><a href =\"" + item.url + '#comment-container\">' + contentStr + "</a></div>" +
             //     "</div>";
               htmlContentWidget +=
-                 "<div class='card-comment-item'>" + "<a href=\"" + 链接 + "\"target=\"_blank\">" + "<img class='ava' src='" + 使用人的来链接 + "'/></a>" +
-                 "<div class='item-header-text'><a href='" + 使用人的来链接 + "' target='_blank'>" + 作者 + "</a>&nbsp;发表于" + getDateDiff(new Date().getTime()) + "</div>" + "<div class=\"item-text\"><a href =\"" + 哈哈哈 + '#comment-container\">' + 我是神 + "</a></div>" +
+                 "<div class='card-comment-item'>" + "<a href=\"" + "链接" + "\"target=\"_blank\">" + "<img class='ava' src='" + "使用人的来链接" + "'/></a>" +
+                 "<div class='item-header-text'><a href='" + "使用人的来链接" + "' target='_blank'>" + "作者" + "</a>&nbsp;发表于" + getDateDiff(new Date().getTime()) + "</div>" + "<div class=\"item-text\"><a href =\"" + "哈哈哈" + '#comment-container\">' + "我是神" + "</a></div>" +
                  "</div>";
         }
         htmlContentWidget += "</div>"
