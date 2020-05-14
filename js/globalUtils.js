@@ -116,8 +116,8 @@ function isNightRange(beginTime, endTime) {
 
 var btoa = (typeof window !== 'undefined' && window.btoa && window.btoa.bind(window));
 
-var clientId = "46a9f3481b46ea0129d8";
-var clientSecret = "79c7c9cb847e141757d7864453bcbf89f0655b24";
+var clientId = "7ca6e5d353f35a92b822";
+var clientSecret = "4cf7f79931f8b7097947afa3aede8b47da3b7998";
 var authorizationToken = 'Basic ' + btoa(clientId + ':' + clientSecret);
 
 function ajaxReqForGitHubNoToken(url,call) {

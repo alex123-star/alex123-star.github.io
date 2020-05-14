@@ -4,7 +4,7 @@
 var lastIndex;
 var musicJsons;
 $(function () {
-    ajaxReqForGitHubNoToken("https://api.github.com/repos/removeif/issue_database/issues/3/comments?per_page=100",function (data) {
+    ajaxReqForGitHubNoToken("https://api.github.com/repos/alex123-star/issue_database/issues/3/comments?per_page=100",function (data) {
         loadMusic(data);
     });
 });
@@ -73,7 +73,7 @@ function playMusic(data, playendcallback) {
 // 视频处理
 var lastVideoIndex;
 $(function () {
-    ajaxReqForGitHubNoToken("https://api.github.com/repos/removeif/issue_database/issues/4/comments?per_page=100",function (data) {
+    ajaxReqForGitHubNoToken("https://api.github.com/repos/alex123-star/issue_database/issues/4/comments?per_page=100",function (data) {
         loadVideo(data);
     });
 });

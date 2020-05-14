@@ -8,7 +8,7 @@
 // });
 
 $(function () {
-    ajaxReqForGitHubNoToken("https://api.github.com/repos/removeif/issue_database/issues/5/comments?per_page=100",function (data) {
+    ajaxReqForGitHubNoToken("https://api.github.com/repos/alex123-star/issue_database/issues/5/comments?per_page=100",function (data) {
         loadRecord(data);
     });
 });

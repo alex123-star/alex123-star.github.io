@@ -1,8 +1,8 @@
 // 评论issues仓库 by.removeif https://removeif.github.io/
 var repoIssuesUrl = "https://api.github.com/repos/userName/userRepo/issues";
 // 对应仓库 clientId、clientSecret 關於这两个参数的安全问题，查看 https://removeif.github.io/2019/09/19/网络安全从零学起.html#1-热门推荐，最新评论：
-var clientId;// = "46a9f3481b46ea0129d8";
-var clientSecret;// = "79c7c9cb847e141757d7864453bcbf89f0655b24";
+var clientId;// = "7ca6e5d353f35a92b822";
+var clientSecret;// = "4cf7f79931f8b7097947afa3aede8b47da3b7998";
 // var authorizationToken = 'Basic ' + btoa(clientId + ':' + clientSecret);
 // 写comment count值
 var reqCommentCountUrl;
@@ -144,6 +144,7 @@ function addCommentInfo(result, resultArr, item, endIndex, i, contentStr) {
 }
 
 function dealWithResultArr(resultArr) {
+    console.log(resultArr);
     // 排序
     resultArr = resultArr.sort(function (a, b) {
         return b.date.localeCompare(a.date);
