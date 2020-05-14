@@ -1,6 +1,6 @@
 // 评论issues仓库 by.removeif https://removeif.github.io/
 var repoIssuesUrl = "https://api.github.com/repos/userName/userRepo/issues";
-// 对应仓库 clientId、clientSecret 關於这两个参数的安全问题，查看 https://removeif.github.io/2019/09/19/网络安全从零学起.html#1-热门推荐，最新评论：
+// 对应仓库 clientId、clientSecret 關於这两个参数的安全问题，查看 https://removeif.github.io/2019/09/19/网络安全从零学起.html#1-热门推荐，最新文章：
 var clientId;// = "7ca6e5d353f35a92b822";
 var clientSecret;// = "4cf7f79931f8b7097947afa3aede8b47da3b7998";
 // var authorizationToken = 'Basic ' + btoa(clientId + ':' + clientSecret);
@@ -160,7 +160,7 @@ function dealWithResultArr(resultArr) {
     }
 }
 
-// 加载最新评论数据
+// 加载最新文章数据
 function loadCommentDataAndRender(authorizationToken) {
     // sort=comments可以按评论数排序，此处更适合按更新时间排序,可以根据updated排序，但是0条评论的也会出来，所以此处还是全部查出来，内存排序
     // per_page 每页数量，根据需求配置
