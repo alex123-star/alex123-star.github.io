@@ -1,9 +1,6 @@
 <!doctype html>
-<html lang="zh"><head><meta charset="utf-8"><meta name="generator" content="Hexo 4.2.0"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><meta name="keywords" content="categories-github"><meta name="description" content="1. 缘起——为何撰写此文
-    从2003年开始接触黑客技术以来，前前后后解答关于如何学习黑客技术的问题近百次，也曾经多次被一些初学者的誓言所打动，义务当了十余次老师，一直教到曾经海誓山盟的初学者不好意思联系我（有的甚至直接将我拉黑-_-!）为止。说实话，一直到现在，我都认为绝大多数看我这篇文章的读者最后终究会放弃，原因很简单，自学终究是一种适合于极少数人的学习方法，而且非常非常慢，在这个过程中的变数过大，稍有不慎，就会与当初的理想失之交臂。
-    但是，毕竟有像我当年一样的年轻人，他们有毅力、有理想，他们真的可 以坚持十年来学习这门技术，而如果有人稍加指导，就有可能将他的自学时间缩短一倍，甚至更多。因此，本着不漏掉一个人的初心，便有了这篇长文，这篇文章除了提炼了我自己长达十年的自学历程外，更综合了这三年我在15PB教出的数百名优秀的信息安全工程师的经验，由于我已经在《黑客如何学起？ - 任晓珲的回答 - 知乎》回答过具体的执行问题，因此这里主要谈内在的东西，其实就我这么多年的经验来看，更多的人之所以没能学好，其实就是内在的东西准备的过于潦草了，希望本文能对想要自学的读者提供力所能及的帮助。
-
-欢迎围观：博客+主题源码、纯主题源码、博客+主题源码 Live Demo"><meta name="author" content="removeif"><title>网络安全从零学起 - 菠蘿貓</title><meta description="写在前面 博客源码包括两个主题icarus和next，在主题基础之上参照各网友博客，以及自己的一些想法做出的一些修改以及增加部分新元素。  以下是修改后的需要的部分配置，其余的配置参照icarus主题配置和next主题配置。因为修改了原作者源码，有什么问题请先联系我，不要去麻烦原作者了，能自己解决的问题就不要麻烦别人了，每个人的时间都很宝贵。膜拜和感谢所有模块的原作者,orz👻,辛苦了。"><meta property="og:type" content="article"><meta property="og:title" content="网络安全从零学起"><meta property="og:url" content="https://removeif.github.io/theme/%E5%8D%9A%E5%AE%A2%E6%BA%90%E7%A0%81%E5%88%86%E4%BA%AB.html"><meta property="og:site_name" content="菠蘿貓"><meta property="og:description" content="写在前面 博客源码包括两个主题icarus和next，在主题基础之上参照各网友博客，以及自己的一些想法做出的一些修改以及增加部分新元素。  以下是修改后的需要的部分配置，其余的配置参照icarus主题配置和next主题配置。因为修改了原作者源码，有什么问题请先联系我，不要去麻烦原作者了，能自己解决的问题就不要麻烦别人了，每个人的时间都很宝贵。膜拜和感谢所有模块的原作者,orz👻,辛苦了。"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://alex123-star.github.io/img/avatar.png"><meta property="article:published_time" content="2019-09-19T14:10:43.000Z"><meta property="article:modified_time" content="2020-04-15T04:43:55.645Z"><meta property="article:author" content="removeif"><meta property="article:tag" content="categories-github"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="https://alex123-star.github.io/img/avatar.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://removeif.github.io/theme/%E5%8D%9A%E5%AE%A2%E6%BA%90%E7%A0%81%E5%88%86%E4%BA%AB.html"},"headline":"网络安全从零学起","image":["https://alex123-star.github.io/img/avatar.png"],"datePublished":"2019-09-19T14:10:43.000Z","dateModified":"2020-04-15T04:43:55.645Z","author":{"@type":"Person","name":"removeif"},"description":"写在前面 博客源码包括两个主题icarus和next，在主题基础之上参照各网友博客，以及自己的一些想法做出的一些修改以及增加部分新元素。  以下是修改后的需要的部分配置，其余的配置参照icarus主题配置和next主题配置。因为修改了原作者源码，有什么问题请先联系我，不要去麻烦原作者了，能自己解决的问题就不要麻烦别人了，每个人的时间都很宝贵。膜拜和感谢所有模块的原作者,orz👻,辛苦了。"}</script><link rel="alternative" href="/atom.xml" title="菠蘿貓" type="application/atom+xml"><link rel="icon" href="http://alex123-star.github.io/img/favicon.png"><script>(function(){
+<html lang="zh"><head><meta charset="utf-8"><meta name="generator" content="Hexo 4.2.0"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><meta name="keywords" content="categories-github"><meta name="description" content="
+"><meta property="og:type" content="article"><meta property="og:title" content="教你20分钟做出2天健身餐"><meta property="og:url" content="https://removeif.github.io/theme/%E5%8D%9A%E5%AE%A2%E6%BA%90%E7%A0%81%E5%88%86%E4%BA%AB.html"><meta property="og:site_name" content="菠蘿貓"><meta property="og:description" content="写在前面 博客源码包括两个主题icarus和next，在主题基础之上参照各网友博客，以及自己的一些想法做出的一些修改以及增加部分新元素。  以下是修改后的需要的部分配置，其余的配置参照icarus主题配置和next主题配置。因为修改了原作者源码，有什么问题请先联系我，不要去麻烦原作者了，能自己解决的问题就不要麻烦别人了，每个人的时间都很宝贵。膜拜和感谢所有模块的原作者,orz👻,辛苦了。"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://alex123-star.github.io/img/avatar.png"><meta property="article:published_time" content="2019-09-19T14:10:43.000Z"><meta property="article:modified_time" content="2020-04-15T04:43:55.645Z"><meta property="article:author" content="removeif"><meta property="article:tag" content="categories-github"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="https://alex123-star.github.io/img/avatar.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://removeif.github.io/theme/%E5%8D%9A%E5%AE%A2%E6%BA%90%E7%A0%81%E5%88%86%E4%BA%AB.html"},"headline":"教你20分钟做出2天健身餐","image":["https://alex123-star.github.io/img/avatar.png"],"datePublished":"2019-09-19T14:10:43.000Z","dateModified":"2020-04-15T04:43:55.645Z","author":{"@type":"Person","name":"removeif"},"description":"写在前面 博客源码包括两个主题icarus和next，在主题基础之上参照各网友博客，以及自己的一些想法做出的一些修改以及增加部分新元素。  以下是修改后的需要的部分配置，其余的配置参照icarus主题配置和next主题配置。因为修改了原作者源码，有什么问题请先联系我，不要去麻烦原作者了，能自己解决的问题就不要麻烦别人了，每个人的时间都很宝贵。膜拜和感谢所有模块的原作者,orz👻,辛苦了。"}</script><link rel="alternative" href="/atom.xml" title="菠蘿貓" type="application/atom+xml"><link rel="icon" href="http://alex123-star.github.io/img/favicon.png"><script>(function(){
                 var bp = document.createElement('script');
                 var curProtocol = window.location.protocol.split(':')[0];
                 if (curProtocol === 'https') {
@@ -24,96 +21,83 @@
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
     
-        gtag('config', 'UA-154601528-1');</script><!--!--><script src="https://cdnjs.loli.net/ajax/libs/pace/1.0.2/pace.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/removeif/removeif.github.io@v3.0.5/css/style.min.css"><link rel="stylesheet" href="/css/e-style.css"><script src="https://cdnjs.loli.net/ajax/libs/jquery/3.3.1/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/gh/removeif/removeif.github.io@v3.0.5/js/globalUtils.min.js"></script></head><body class="is-3-column has-navbar-fixed-top"><nav class="navbar navbar-main is-fixed-top"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="https://alex123-star.github.io/img/logo.png" alt="菠蘿貓" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">首頁</a><a class="navbar-item" href="/archives">歸檔</a><a class="navbar-item" href="/categories">分類</a><a class="navbar-item" href="/tags">標籤</a><a class="navbar-item" href="/media">影音</a><a class="navbar-item" href="/album">相冊</a><a class="navbar-item" href="/friend">友鏈</a><a class="navbar-item" href="/message">留言</a><a class="navbar-item" href="/self-talking">健康生活</a><a class="navbar-item" href="/about">關於</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/removeif"><i class="fab fa-github"></i></a><a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a><a class="navbar-item" id="night-nav" title="Night Mode" href="javascript:;"><i class="fas fa-moon" id="night-icon"></i></a></div></div></div></nav><script type="text/javascript" src="https://cdn.jsdelivr.net/gh/removeif/removeif.github.io@v3.0.5/js/theme-setting.min.js"></script><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-9-widescreen"><div class="card"><div class="card-image"><span class="image is-7by3"><img class="thumbnail" src="http://alex123-star.github.io/img/H/h.jpg" alt="网络安全从零学起"></span></div><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><div style="color: #3273dc;font-size: 1.8rem;"><i class="fas fa-arrow-alt-circle-up"></i> </div><i class="far fa-calendar-plus"> </i>2019-09-19  <a class="commentCountImg" href="/theme/%E5%8D%9A%E5%AE%A2%E6%BA%90%E7%A0%81%E5%88%86%E4%BA%AB.html#comment-container"><span class="display-none-class">905608cd2c9a99f760cbf79a32519287</span><i class="far fa-comment-dots"></i> <span class="commentCount" id="905608cd2c9a99f760cbf79a32519287">99+</span>  </a><span class="level-item"><i class="far fa-clock"> </i>22 分钟  <i class="fas fa-pencil-alt"> </i>3.2 k</span><span class="level-item" id="busuanzi_container_page_pv"><i class="far fa-eye"></i>&nbsp;&nbsp;<span id="busuanzi_value_page_pv">0</span>次访问</span></div></div><h1 class="title is-3 is-size-4-mobile">网络安全从零学起</h1><div class="content"><h3 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h3><blockquote>
+        gtag('config', 'UA-154601528-1');</script><!--!--><script src="https://cdnjs.loli.net/ajax/libs/pace/1.0.2/pace.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/removeif/removeif.github.io@v3.0.5/css/style.min.css"><link rel="stylesheet" href="/css/e-style.css"><script src="https://cdnjs.loli.net/ajax/libs/jquery/3.3.1/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/gh/removeif/removeif.github.io@v3.0.5/js/globalUtils.min.js"></script></head><body class="is-3-column has-navbar-fixed-top"><nav class="navbar navbar-main is-fixed-top"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="https://alex123-star.github.io/img/logo.png" alt="菠蘿貓" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">首頁</a><a class="navbar-item" href="/archives">歸檔</a><a class="navbar-item" href="/categories">分類</a><a class="navbar-item" href="/tags">標籤</a><a class="navbar-item" href="/media">影音</a><a class="navbar-item" href="/album">相冊</a><a class="navbar-item" href="/friend">友鏈</a><a class="navbar-item" href="/message">留言</a><a class="navbar-item" href="/self-talking">健康生活</a><a class="navbar-item" href="/about">關於</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/removeif"><i class="fab fa-github"></i></a><a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a><a class="navbar-item" id="night-nav" title="Night Mode" href="javascript:;"><i class="fas fa-moon" id="night-icon"></i></a></div></div></div></nav><script type="text/javascript" src="https://cdn.jsdelivr.net/gh/removeif/removeif.github.io@v3.0.5/js/theme-setting.min.js"></script><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-9-widescreen"><div class="card"><div class="card-image"><span class="image is-7by3"><img class="thumbnail" src="http://alex123-star.github.io/img/health/img0.jpg" alt="教你20分钟做出2天健身餐"></span></div><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><div style="color: #3273dc;font-size: 1.8rem;"><i class="fas fa-arrow-alt-circle-up"></i> </div><i class="far fa-calendar-plus"> </i>2019-09-19  <a class="commentCountImg" href="/theme/%E5%8D%9A%E5%AE%A2%E6%BA%90%E7%A0%81%E5%88%86%E4%BA%AB.html#comment-container"><span class="display-none-class">905608cd2c9a99f760cbf79a32519287</span><i class="far fa-comment-dots"></i> <span class="commentCount" id="905608cd2c9a99f760cbf79a32519287">99+</span>  </a><span class="level-item"><i class="far fa-clock"> </i>22 分钟  <i class="fas fa-pencil-alt"> </i>3.2 k</span><span class="level-item" id="busuanzi_container_page_pv"><i class="far fa-eye"></i>&nbsp;&nbsp;<span id="busuanzi_value_page_pv">0</span>次访问</span></div></div><h1 class="title is-3 is-size-4-mobile">教你20分钟做出2天健身餐</h1><div class="content"><h3 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h3><blockquote>
 <p>博客源码包括两个主题<a href="http://github.com/ppoffice/hexo-theme-icarus">icarus</a>和<a href="https://github.com/iissnan/hexo-theme-next">next</a>，在主题基础之上参照各网友博客，以及自己的一些想法做出的一些修改以及增加部分新元素。  以下是修改后的需要的部分配置，其余的配置参照<a href="http://github.com/ppoffice/hexo-theme-icarus">icarus主题配置</a>和<a href="https://github.com/iissnan/hexo-theme-next">next主题配置</a>。<br>因为修改了原作者源码，有什么问题请先联系我，不要去麻烦原作者了，能自己解决的问题就不要麻烦别人了，每个人的时间都很宝贵。<br>膜拜和感谢所有模块的原作者,orz👻,辛苦了。  </p>
 </blockquote>
-<p>欢迎围观：<a href="https://www.zhihu.com/question/66318943/answer/246341379">学历在信息安全行业的重要度如何？</a>、<a href="https://www.zhihu.com/question/336570836/answer/779592393">信息安全专业好吗？</a>、<a href="https://www.zhihu.com/question/336963055/answer/785203863">渗透测试入门指南与路线规划</a></p>
+<p>欢迎围观：<a href="https://github.com/removeif/hexo-theme-icarus-removeif.git">博客+主题源码</a>、<a href="#.git">纯主题源码</a>、<a href="https://removeif.github.io/removeif-demo/">博客+主题源码 Live Demo</a></p>
 <a id="more"></a>
 
-<h3 id="1. 缘起——为何撰写此文"><a href="#1. 缘起——为何撰写此文" class="headerlink" title="1. 缘起——为何撰写此文"></a>1. 缘起——为何撰写此文</h3>
+<h3 id="1. 缘起——为何撰写此文"><a href="#1. 缘起——为何撰写此文" class="headerlink" title="1. 缘起——为何撰写此文"></a>1. 教你20分钟做出2天健身餐</h3>
 
-<p>从2003年开始接触黑客技术以来，前前后后解答关于如何学习黑客技术的问题近百次，也曾经多次被一些初学者的誓言所打动，义务当了十余次老师，一直教到曾经海誓山盟的初学者不好意思联系我（有的甚至直接将我拉黑-_-!）为止。说实话，一直到现在，我都认为绝大多数看我这篇文章的读者最后终究会放弃，原因很简单，自学终究是一种适合于极少数人的学习方法，而且非常非常慢，在这个过程中的变数过大，稍有不慎，就会与当初的理想失之交臂。</p>
-<p>但是，毕竟有像我当年一样的年轻人，他们有毅力、有理想，他们真的可以坚持十年来学习这门技术，而如果有人稍加指导，就有可能将他的自学时间缩短一倍，甚至更多。因此，本着不漏掉一个人的初心，便有了这篇长文，这篇文章除了提炼了我自己长达十年的自学历程外，更综合了这三年我在15PB教出的数百名优秀的信息安全工程师的经验，由于我已经在《黑客如何学起？ - 任晓珲的回答 - 知乎》回答过具体的执行问题，因此这里主要谈内在的东西，其实就我这么多年的经验来看，更多的人之所以没能学好，其实就是内在的东西准备的过于潦草了，希望本文能对想要自学的读者提供力所能及的帮助。</p>
+<p>明天就是周末了，我希望大家尝试这个方法帮助自己吃的更健康，我演示用20分钟做2天4顿健康餐的具体方法，厨房小白都可以轻易掌握！</p>
+<p>首先大家可以先去超市采购，采购内容具体可以按照下图：</p>
+<p>虾仁、精瘦猪肉和牛肉、三文鱼、蔬菜、大米、鸡蛋。</p>
+<br><img src="https://alex123-star.github.io/img/health/img0.jpg" alt="健康生活">
 
 
-<h3 id="2. 心法——术与道的博弈"><a href="#2. 心法——术与道的博弈" class="headerlink" title="2. 心法——术与道的博弈"></a>2. 心法——术与道的博弈</h3>
-<p>经过我总结提炼数百位自己学生的学习路径，加上我自己学习十余年的经验，最终我的心得是——决定大多数人是否能够学会这个技术的关键点，是对一些基本问题的理解是否准确。</p>
-<p>用人话说就是，用遵循世间规则的智慧（道）去引导内心的冲动与目标（术）的能力决定你这次学习的最终结局（甚至是更大的，这一生的结局）。</p>
-<p>下面我就从三个典型的认知谬误分别讲解这个问题：</p>
-<h4>首先，是终点与成长的博弈。</h4>
-<p>我曾经问过很多学习黑客技术的初学者为什么要学习这个，我得到的最多答案就是“我要变得很牛逼！”，然而至于如何才算牛逼呢，他们的答案是“如果我学会黑客技术，我就_____”，而当你继续问要学习什么才能这么牛逼时，基本上就给问住了。</p>
-<p>当然，我这篇文章的目的就是为了解决这个被问住的问题，但是笔者现在的经验毕竟不同于八年前我绘制《Windows下Hacker学习发展流程图 V0.2 Beta》的状态，我感觉自己有义务、也有能力给出各位初学者一个更好的，可以受用一生的答案，因此才有了这段名为“心法”的废话，但就我个人而言，我认为这才是我的心得的精华之所在。</p>
-<p>我相信绝大多数阅读本篇文章的同学都在高中时听到过一句话，那就是“只要如何如何学习，就能考上好大学，就成功了！”这种一劳永逸的想法源自于我们人类千百万年的进化，但是随着近几千年的发展，这种想法逐渐成为了我们的桎梏。而可悲的是，作为新人类的我们，却还要忍受高中教育的这种错误价值观的强化，最终的结果是接受更多教育的我们反而被削弱了自己的价值。</p>
-<p>经历过高考的各位同学都应该心有感触：</p>
-<ul>
-    <li>当你在高中时，你被告知必须考上大学才能成功</li>
-    <li>当你在初入大学认为已经成功之时，你被告知必须修够学分拿到毕业证才能成功</li>
-    <li>而当你成功毕业认为已经成功之时，你被告知必须找个好工作才能成功</li>
-    <li>而当你千辛万苦终于找个好工作时，你被告知必须出色完成KPI快速升职加薪才能成功</li>
-    <li>当你使出吃奶的劲儿升职加薪之后，你被告知必须在北京买上几百万的房子才能成功</li>
-    <li>……</li>
-</ul>
-<p>而如果你一直以这种思维生活/学习下去，那么你基本上就不会成功，你的每一次目标的达成都会让你多一分怨气，少一分斗志，最后大多数人就局限在这个死循环中被吞没了。而且更加要命的是，由于你过于关注每次达成“成功”的局部，而无法以更大的格局思考问题。</p>
-<p>如果你突破不了基因带给你的桎梏，那么你将永远是芸芸众生，而我们都知道芸芸众生中是不可能有黑客这种精英出现的。</p>
-<p>因此，在你正式准备学习黑客之前，建议你要先了解一个客观事实，那就是——只有成长才是永恒的主题，过程中的成功仅仅是你成长路上的里程碑而已。</p>
-<p>也就是你要搞清楚一件事，所谓的成功只不过是供你意淫的一个小目标，而并非就是终点，如果你认识不到这一点，那么就会出现很严重的问题。</p>
-<p>举例来说，如果小明认为“如果我要学会黑客技术，我就可以盗美女的QQ号啦”，那么如果小明是按照一个专业黑客的路线发展的话（无此想法的读者请右上角点击关闭，出门左转各大黑客网站），小明首先需要做的就是要精通C语言。</p>
-<p>而学习C语言与盗QQ这种工具流比起来，简直不知道要高级多少倍，因此自然也要更困难些，这样就会导致小明做着一件实际价值很高，但在小明看来却不值一提的事（C语言在小明心里远不及盗QQ高级），这种落差带来的认知失调最终会将你学习黑客技术的激情冲的一干二净。</p>
-<p>因此，学习黑客技术的第一条铁律就是<h6>不要有终点思维，深刻理解成长才是永恒的主题。</h6></p>
-<h6>其次，是幻想与价值的博弈。</h6>
-<p>懒惰是最容易容易让人们产生幻想的行为。因为懒惰，所以不能得到，但是内心又无比渴求，所以只能通过幻想来麻痹自己。这里的幻想可能是自己有意识的幻想，也有可能是无无意识的幻想，甚至自己都不知道正处于幻想中（例如参与传销的人员或大部分直销微商从业者）。</p>
-<p>但是你大可不必为此而自责，最起码对于我来说，或者我通过观察周围的人而得出的结论，包括我在内的几乎所有人都在无时不刻的与懒惰做着斗争，例如“事情太多”、“这太难了”、“没有灵感”等等都是因懒惰而产生的幻觉。因此，任何一位你眼中的大牛无不是通过了无数次与懒惰的殊死博弈才取得的今天的成就。</p>
-<p>因此，你要知道，只有你真正俯下身子去一点点的学习知识，才会使得你离黑客越来越近。但可怕的是，大多数初学者并不懂得这些，他们在内心深处始终都认为有那么一种灵丹妙药可以让他在更短的时间内掌握黑客技术，从而去花费数倍于所谓的“更短时间”的时间去寻求这本就不存在的方法。</p>
-<p>毫不夸张的说，这篇文章本身，就是幻想的一部分，而其实这是我给各位准备的糖衣炮弹，用幻想的外衣包裹着砸碎幻想的内核，期望能以此来拯救包括你在内的芸芸众生。</p>
-<p>因此，学习黑客技术的第二条铁律就是<h6>不要抱有任何幻想、任何偷奸取巧，只要你决定这条路是自己去走，那么无论你如何寻找奇技淫巧，最终都不会让你少走半步。</h6></p>
-<h5>最后，是浮躁与耐心的博弈。</h5>
-<p>自大、自满、眼高手低皆来源于浮躁，而最致命的是，如今这个社会的整体就是浮躁的。几分钟的短视频大行其道、2倍速的电视剧备受热捧以及博客的落寞与微博的火爆，在我们拂去导致这些现象的哪些所谓快节奏生活、碎片化时间的表象后，透出的是不愿深入、以小搏大的心态内核。我们以为几分钟的短视频就可以掌握一些知识，我们认为140字的微博就可以描述清所有事情，我们认为看文章就要看精华，在如今快节奏的当下花30分钟去逐字逐句的阅读一篇长文是愚蠢的行为</p>
-<p>（例如现在的你），而这种想法就是最典型的浮躁。</p>
-<p>从蹒跚学步开始，我们通过无数次的摔倒懂得了路要一步一步的走，走急了就要被绊倒；</p>
-<p>从咿呀学语开始，我们通过无数次的哭闹懂得了话要一字一字的说，说急了就要被误解；</p>
-<p>从步入社会开始，我们通过无数次的失败懂得了事要一板一眼的做，做急了就要被出局。</p>
-<p>我们成长的过程就是在进行一段不断摒弃浮躁，拾起耐心的旅途。</p>
-<p>如果你理解了成长的意义，如果你已坚定信心笃学技术，那么，你还有可能被最后一块石头所绊倒，那就是<h1>对自己的耐心。</h1></p>
-<p>包括我在内的绝大多数人，在制定目标时都会高估自己的精力、高估自己的效率、高估自己的智商，甚至高估自己对此事的兴趣。</p>
-<p>这一系列的高估会在学习后半段严重干扰我们的学习效果，那种现实与理想的差距会导致你对自己能力的认知失调，进而过低的估计自己各方面能力，最终导致失败。</p>
-<p>因此，学习黑客技术的第三条铁律就是<h6>时刻葆有对低效率的自己的耐心。</h6></p>
-<h3 id="2. 心法——术与道的博弈"><a href="#2. 心法——术与道的博弈" class="headerlink" title="2. 心法——术与道的博弈"></a>2. 心法——术与道的博弈</h3>
-<p>想要做任何事情之前，一定要想清楚三个问题，分别是你为什么要做，你愿意为此付出什么，你想要的结果是什么。而所谓的智慧，就是一个人通过这种方式不断的调整自己对于各种事情的预期，从而达到一种与外界的平衡。如果将这个思路映射到黑客学习这件事上，大体可以分为如下三个问题。</p>
-<p><h5>首先，要考虑清楚你为何要学这个。</h5>说白了就是你的动机是什么，如果你的动机是不可持续的，例如盗个QQ（甚至是挖个系统级0Day漏洞），那么我建议你将自己的动机修改为可持续的，例如你想保持一项什么记录（甚至是让其他人更加尊敬你），因为这类动机是在不断变换的，只有这类动机才能让你有一个更加长久的动力源泉，才能促使你坚持的更久，也就能取得更大的成就。</p>
-<p><h1>其次，要考虑明白你可以付出什么。</h1>你要清楚的是，任何事情都是有代价的，而且如果你此时的年龄越小，你那么你对“代价”的理解就越不深刻，这点一定要着重加以注意。</p>
-<p>黑客技术是一件非常有魅力、非常有价值，同时也是非常酷的一件事，但是这么有魅力的事情，如果你想要完成它，要么需要极佳的运气，要么就是需要你付出非人的努力。</p>
-<p>举例来说，最近我们经常看到媒体在报道时说国内某组织的某黑客在几秒内就攻破了IE浏览器，在几秒内就绕过了XX保护机制。但事实的真相是他们其实就是运行了一个自己准备好的代码而已，而媒体上说的这几秒钟的时间其实是代码的运行时间。据我说知，他们在参赛之前，整个团队为了这几秒钟的ShowTime，需要经历至少十余个甚至数十个不眠之夜，然后才能打造出可能仅有几百个字节的艺术品般的代码（也就是Exploit），最后才能拿去现场过五关斩六将。</p>
-<p>如果在这个十三亿人口的国度里最牛逼的黑客都需要如此付出，那么作为目前默默无闻的你来说，想要学会这门技术应该需要多少个不眠之夜呢？</p>
-<p><h5>最后，要考虑你的学习方向是什么。信息安全领域的方向太多了</h5>，如果最粗旷的分，大致可以分为网络安全、软件安全、基础安全这三类。其中网络安全包括网络渗透、通讯安全、电信安全等，软件安全包括授权控制、漏洞挖掘、加密解密等，基础安全分为理论安全、密码学等。</p>
-<p>我收到的最多的、也是令我最郁闷的问题就是“任老师，你的那幅图我已经看了，但是我想知道我应该怎么学呢？或是从何处开始呢？”是的，你没看错，纵然我这幅图获得了超乎想象的关注，但是仍有很大一部分人似乎并没有因为这个世界上多出这幅珍贵的图而获得什么，他们仍然是迷茫的，当然，这也并不能全怪他们。</p>
-<p>所有人的成长都是从知道自己不需要什么东西开始的，举例来说，几乎95%以上的大学生其实根本就不知道自己想要什么，只知道自己不想要什么，这其实就是不成熟的一种表现，用我们那个方言讲就是“青瓜蛋子”。</p>
-<p>那么“青瓜蛋子”们最需要的是什么呢？就是前辈们的指导，告诉他们，他们真正的需求是什么，然后他们恍然大悟，似乎这就真的是他们此时所最需要的东西了。</p>
-<p>而就大多数事情而言，根本没那么复杂，随意挑选一个你最感兴趣的方向就好了；如果挑不出来，那就随意挑一个你感觉自己最擅长的；如果还挑不出来，那就挑一个你感觉最顺眼的即可。</p>
-<p>学习信息安全技术如同做其他事情一样，最终如果你要想有所成就，必然是登上这个领域数座高峰的强者，然而你一开始并不能做到这一点，因此最简单的方法就是随便挑选一座不是太低的山峰蹬一蹬试试看。因为只要你能登上其中的一座山峰，就能一览众山小，就掌握了快速登顶相邻山峰的方法。</p>
-<p>学习信息安全技术同样如此，你应该想找一个不是太浅的方向（例如渗透就有些浅）深入研究下去，等你将这个领域彻底研究明白后，其他方向的技术自然就能触类旁通了。</p>
+<h3 id="2. 为什么是2天4餐呢？"><a href="#2.为什么是2天4餐呢？" class="headerlink" title="2. 心法——术与道的博弈"></a>2. 为什么是2天4餐呢？</h3>
+<p>因为早餐大家普遍都吃的比较简单，比如喝牛奶吃面包加煮鸡蛋，已经非常方便快捷了，所以我做的健康餐其实是中餐和晚餐吃的。至于每餐搭配，要有碳水化合物（主食），蛋白质（肉类、海鲜或鸡蛋）和蔬菜。脂肪呢？肉类里面已经含有了嘛！</p>
+<p>所以，我会准备几个方便用微波炉直接加热的饭盒，我的习惯是准备5个饭盒。</p>
+<p>如图，<h6>左边的4个饭盒分别用来装4餐的肉类和主食，右边的饭盒用来装当天的蔬菜</h6>，因为主食和肉类可以放冰箱冷藏，但蔬菜我相信大部分人都喜欢吃新鲜的，直接用水现煮就非常快。</p>
+<br><img src="https://alex123-star.github.io/img/health/img1.jpg" alt="健康生活">
 
-<h3 id="4. 经验——学习路线详解文"><a href="#4. 经验——学习路线详解" class="headerlink" title="4. 经验——学习路线详解"></a>4. 经验——学习路线详解</h3>
-<p>我已经在《黑客如何学起？ - 任晓珲的回答 - 知乎》解答了，这里把图复制过来一份，省得各位麻烦。</p>
-<br><img src="https://alex123-star.github.io/img/H/发展图版2.jpg" alt="健康生活">
-<p>2018-09-25 《黑客学习发展流程图》更新至v1.1版</p>
-<br><img src="https://alex123-star.github.io/img/H/心法.jpg" alt="健康生活">
-<p>5. 结尾——参考书籍列表</p>
-<br><img src="https://alex123-star.github.io/img/H/书籍.jpg" alt="健康生活">
-<p>所有书籍共计2632.50元，大概15000页。这些内容脱产自学的话至少需要3年。边工作边自学的话，如果工作内容不能与学习内容高度重合，那么至少需要5年以上时间。</p>
-<p><h5>安利：</h5>如果你想6个月内学会以上超过70%的内容，可以考虑来十五派(15PB®)学习，有十五派(15PB®)加持，至少可以帮你节省两年以上的成长时间，相当于游戏里花买装备，从此成为“黑客游戏世界”中的人民币玩家！</p>
 
-<h3 id="4. 经验——学习路线详解文"><a href="#4. 经验——学习路线详解" class="headerlink" title="4. 经验——学习路线详解"></a>1. 缘起——为何撰写此文</h3>
-<p>有什么问题请在留言里提问，我会将一些典型问题汇集到这里。</p>
-<p>Q：我想学习黑客技术/信息安全技术，应该如何去学习呢？</p>
-<p>A：我能回答的全部都在这篇文章里了，如果文章里未能包含你感兴趣的内容，你方便的话最好有针对性的提出来，这样我才能有的放矢，否则类似这种比较宽泛的问题我确实难以回答。</p>
-<p>Q：如果我想学习这门技术，究竟需要一个什么样的英语及数学功底呢？</p>
-<p>A：这主要看你对自己的定位，毫不夸张的说，任何理工科岗位，如果你英语和数学很好，相对其他人都会更有竞争力（达到同样的高度花的力气相对更少）、更有潜力（职业生涯中更有可能获得稀缺资源及机会）。但是就目前而言，计算机领域内的分工会越来越细，数学好的人可以专门去设计算法，而技术好的人可以专门去做实施，因此如果你给自己的定位不是顶级信息安全公司中的技术核心，一般情况下都到不了拼数学底子、拼英语底子的程度。就整体而言，英语与数学叠加起来对一个人技术的影响绝对是低于20%的（其实对于绝大多数人而言低于5%）。</p>
-<p>Q：学历在信息安全行业的重要度如何？</p>
-<p>A：如果是在2015年以前，由于整个行业人才较为稀缺，技术好的人基本都是靠兴趣自学的怪才，所以这部分人学历普遍不高，因此各个企业在招人时也是摆足了姿态，纷纷表示可不卡学历。而就目前来看，虽然仍有一部分企业声称不卡学历，但是无论是在入职要求、入职薪资还是岗位安排来看，低学历的可以说已经是占足了劣势。而导致这个问题的原因可以说是多方面的，具体可参见我回答的 <a href="https://www.zhihu.com/question/66318943/answer/246341379">学历在信息安全行业的重要度如何？任晓珲：学历在信息安全行业的重要度如何？学历在信息安全行业的重要度如何？</a></p>
+<h4>如何确定每餐食物具体的量？</h4>
+<p>这很关键，在不称量食物重量的前提下，确定每餐的量的最简单的方法就是——每餐吃一块自己拳头大小的肉（生重或熟重都可以），</p>
+<p>一拳猪肉</p>
+<br><img src="https://alex123-star.github.io/img/health/img2.jpg" alt="健康生活">
+
+<p>一拳虾仁</p>
+<br><img src="https://alex123-star.github.io/img/health/img4.jpg" alt="健康生活">
+
+<p>一拳鸡胸肉</p>
+<br><img src="https://alex123-star.github.io/img/health/img5.jpg" alt="健康生活">
+
+<p>所以四顿就是4拳精瘦肉类即可。我个人是比较喜欢变换口味，如果你4顿都吃鸡胸肉或者猪肉和牛肉也没问题，看个人喜好。</p>
+<br><img src="https://alex123-star.github.io/img/health/img6.jpg" alt="健康生活">
+
+<p>每餐再配上自己拳头大小的主食（因为生米煮熟后会体积膨胀，最好略小于自己拳头），绿色蔬菜可以不限量任意吃到饱。因此，我称该方法为“两拳齐美”。</p>
+<br><img src="https://alex123-star.github.io/img/health/img7.jpg" alt="健康生活">
+<p>所以四顿的主食准备好了直接一起煮，我喜欢把不同种类的米混合在一起，我建议大家尽量选择粗粮，比如糙米、黑米、红米等。</p>
+
+<h3>接下来开始烹饪</h3>
+<p>首先加热锅，把洗干净的需要烹饪的肉放入锅中，这样稍微把水煮干待会煎炒的时候会更加好吃。</p>
+<br><img src="https://alex123-star.github.io/img/health/img8.jpg" alt="健康生活">
+
+<p>把水煮干后将肉移出。</p>
+<br><img src="https://alex123-star.github.io/img/health/img9.jpg" alt="健康生活">
+
+
+<p>往锅中加入一勺油，最好是橄榄油，但也可以是任何类型的油，因为油的热量没有差别。</p>
+<br><img src="https://alex123-star.github.io/img/health/img10.jpg" alt="健康生活">
+
+<p>加热油后将需要煎炒的肉类放入锅中，中小火煎至两面金黄。</p>
+<br><img src="https://alex123-star.github.io/img/health/img11.jpg" alt="健康生活">
+
+<p>然后撒些盐和自己喜欢的调料，比如胡椒粉、辣椒粉和孜然粉。</p>
+<p>先煎炒完一部分肉类然后取出来用碗装好，再煎炒另一部分肉类。尽量一次煎多餐的，而且之前的可以不用洗锅，这样会非常方便省时。</p>
+<p>用同样方法煎炒剩下的肉类。</p>
+<br><img src="https://alex123-star.github.io/img/health/img12.jpg" alt="健康生活">
+
+<p>另外，还可以将一部分肉类采用蒸的方式烹饪，比如牛扒、猪扒多顿的量，先调好味，然后在煮饭时间过半的时候一起放入蒸就好，省时省力，还能让每餐有不同口感。</p>
+<p>煮好的样子</p>
+<br><img src="https://alex123-star.github.io/img/health/img13.jpg" alt="健康生活">
+
+<p>当天的蔬菜同样用之前锅里的油煎炒即可，这样是最快的。</p>
+<br><img src="https://alex123-star.github.io/img/health/img14.jpg" alt="健康生活">
+
+<p>做好的成品，4顿的肉类和主食，</p>
+<br><img src="https://alex123-star.github.io/img/health/img15.jpg" alt="健康生活">
+
+<p>再配上当天的蔬菜，还是蛮有成就感的哦~！</p>
+<br><img src="https://alex123-star.github.io/img/health/img16.jpg" alt="健康生活">
+
+
+
 
 <div class="img-x">
 
-</div><ul class="post-copyright"><li><strong>本文标题：</strong><a href="https://alex123-star.github.io/theme/网络安全从零学起.html">网络安全从零学起</a></li><li><strong>本文作者：</strong><a href="https://alex123-star.github.io">菠蘿貓</a></li><li><strong>本文链接：</strong><a href="https://alex123-star.github.io/theme/网络安全从零学起.html">https://alex123-star.github.io/theme/网络安全从零学起.html</a></li><li><strong>版权声明：</strong><span>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</span></li></ul><div><div class="recommend-post"><span class="is-size-6 has-text-grey has-mr-7"># 相关文章</span><br><span>  1.<a class="is-size-6" href="/theme/github-Issue-%E4%BD%9C%E4%B8%BA%E5%8D%9A%E5%AE%A2%E5%BE%AE%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%BA%94%E7%94%A8.html" target="_blank">github Issue 作为博客微型数据库的应用</a><br></span><span>  2.<a class="is-size-6" href="/theme/github-page%E7%BD%91%E7%AB%99cdn%E4%BC%98%E5%8C%96%E5%8A%A0%E9%80%9F.html" target="_blank">github page网站cdn优化加速</a><br></span><span>  3.<a class="is-size-6" href="/theme/%E5%8D%9A%E5%AE%A2%E6%8D%A2%E8%82%A4%E7%9A%84%E4%B8%80%E7%A7%8D%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F%E6%80%9D%E8%B7%AF.html" target="_blank">博客换肤的一种实现方式思路</a><br></span><span>  4.<a class="is-size-6" href="/theme/%E5%8D%9A%E5%AE%A2%E4%B8%ADgitalk%E6%9C%80%E6%96%B0%E8%AF%84%E8%AE%BA%E7%9A%84%E8%8E%B7%E5%8F%96.html" target="_blank">博客中gitalk最新文章的获取</a><br></span><span>  5.<a class="is-size-6" href="/theme/%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87%E4%B8%8A%E4%BC%A0picgo%E5%B7%A5%E5%85%B7github%E5%9B%BE%E4%BC%A0%E4%BD%BF%E7%94%A8.html" target="_blank">博客图片上传picgo工具github图传使用</a><br></span><span>  6.<a class="is-size-6" href="/theme/%E5%AE%89%E8%A3%85%E3%80%81%E9%83%A8%E5%88%86%E9%85%8D%E7%BD%AEicarus%E4%B8%BB%E9%A2%98%E4%B8%AD%E6%96%87%E7%89%88.html" target="_blank">安装、部分配置icarus主题中文版</a><br></span></div><div class="recommend-post"><span class="is-size-6 has-text-grey has-mr-7"># 推荐文章</span><br><span>  1.<a class="is-size-6" href="/theme/%E5%8D%9A%E5%AE%A2%E6%BA%90%E7%A0%81%E5%88%86%E4%BA%AB.html" target="_blank">网络安全从零学起</a><br></span><span>  2.<a class="is-size-6" href="/breaking-news/2019%E5%B9%B4%E5%9B%BD%E5%BA%8670%E5%91%A8%E5%B9%B4%E9%98%85%E5%85%B5%E5%AE%8C%E6%95%B4%E5%9B%BE%E6%96%87%E8%A7%A3%E8%AF%B4.html" target="_blank">2019年国庆70周年阅兵完整图文解说(收藏!)</a><br></span><span>  3.<a class="is-size-6" href="/theme/%E5%8D%9A%E5%AE%A2%E4%B8%ADgitalk%E6%9C%80%E6%96%B0%E8%AF%84%E8%AE%BA%E7%9A%84%E8%8E%B7%E5%8F%96.html" target="_blank">博客中gitalk最新文章的获取</a><br></span><span>  4.<a class="is-size-6" href="/law/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%88%91%E4%BA%8B%E8%AF%89%E8%AE%BC%E6%B3%95.html" target="_blank">中华人民共和国刑事诉讼法</a><br></span><span>  5.<a class="is-size-6" href="/database/mysql/mysql%E5%85%81%E8%AE%B8%E6%9C%80%E5%A4%A7sql%E8%AF%AD%E5%8F%A5%E9%95%BF%E5%BA%A6%E9%85%8D%E7%BD%AE.html" target="_blank">mysql允许最大sql语句长度配置</a><br></span><span>  6.<a class="is-size-6" href="/develop/github-gpg-failed-to-sign-the-data.html" target="_blank">github gpg failed to sign the data</a><br></span></div></div><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/social-share.js/1.0.16/css/share.min.css"><div class="social-share"></div><script src="https://cdnjs.loli.net/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script></article></div><div class="card"><div class="card-content"><h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3><div class="buttons is-centered"><a class="button is-info donate"><span class="icon is-small"><i class="fab fa-alipay"></i></span><span>支付宝</span><span class="qrcode"><img src="https://www.reef.run/images/pyment/alipayimg.jpg" alt="支付宝"></span></a><a class="button is-success donate"><span class="icon is-small"><i class="fab fa-weixin"></i></span><span>微信</span><span class="qrcode"><img src="https://www.reef.run/images/pyment/weipayimg.jpg" alt="微信"></span></a></div></div></div><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/tools/docker%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8.html"><i class="level-item fas fa-chevron-left"></i><span class="level-item">docker安装与使用</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/theme/%E5%8D%9A%E5%AE%A2%E6%8D%A2%E8%82%A4%E7%9A%84%E4%B8%80%E7%A7%8D%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F%E6%80%9D%E8%B7%AF.html"><span class="level-item">博客换肤的一种实现方式思路</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><!--!--><div class="card"><div class="card-content"><h3 class="title is-5">评论</h3><div id="comment-container"></div><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/gitalk/1.6.0/gitalk.css"><script> $.getScript('https://cdn.jsdelivr.net/gh/removeif/removeif.github.io@v3.0.5/js/gitalk.min.js', function () { 
+</div><ul class="post-copyright"><li><strong>本文标题：</strong><a href="https://alex123-star.github.io/theme/教你20分钟做出2天健身餐.html">教你20分钟做出2天健身餐</a></li><li><strong>本文作者：</strong><a href="https://alex123-star.github.io">菠蘿貓</a></li><li><strong>本文链接：</strong><a href="https://alex123-star.github.io/theme/教你20分钟做出2天健身餐.html">https://alex123-star.github.io/theme/教你20分钟做出2天健身餐.html</a></li><li><strong>版权声明：</strong><span>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</span></li></ul><div><div class="recommend-post"><span class="is-size-6 has-text-grey has-mr-7"># 相关文章</span><br><span>  1.<a class="is-size-6" href="/theme/github-Issue-%E4%BD%9C%E4%B8%BA%E5%8D%9A%E5%AE%A2%E5%BE%AE%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%BA%94%E7%94%A8.html" target="_blank">github Issue 作为博客微型数据库的应用</a><br></span><span>  2.<a class="is-size-6" href="/theme/github-page%E7%BD%91%E7%AB%99cdn%E4%BC%98%E5%8C%96%E5%8A%A0%E9%80%9F.html" target="_blank">github page网站cdn优化加速</a><br></span><span>  3.<a class="is-size-6" href="/theme/%E5%8D%9A%E5%AE%A2%E6%8D%A2%E8%82%A4%E7%9A%84%E4%B8%80%E7%A7%8D%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F%E6%80%9D%E8%B7%AF.html" target="_blank">博客换肤的一种实现方式思路</a><br></span><span>  4.<a class="is-size-6" href="/theme/%E5%8D%9A%E5%AE%A2%E4%B8%ADgitalk%E6%9C%80%E6%96%B0%E8%AF%84%E8%AE%BA%E7%9A%84%E8%8E%B7%E5%8F%96.html" target="_blank">博客中gitalk最新文章的获取</a><br></span><span>  5.<a class="is-size-6" href="/theme/%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87%E4%B8%8A%E4%BC%A0picgo%E5%B7%A5%E5%85%B7github%E5%9B%BE%E4%BC%A0%E4%BD%BF%E7%94%A8.html" target="_blank">博客图片上传picgo工具github图传使用</a><br></span><span>  6.<a class="is-size-6" href="/theme/%E5%AE%89%E8%A3%85%E3%80%81%E9%83%A8%E5%88%86%E9%85%8D%E7%BD%AEicarus%E4%B8%BB%E9%A2%98%E4%B8%AD%E6%96%87%E7%89%88.html" target="_blank">安装、部分配置icarus主题中文版</a><br></span></div><div class="recommend-post"><span class="is-size-6 has-text-grey has-mr-7"># 推荐文章</span><br><span>  1.<a class="is-size-6" href="/theme/%E5%8D%9A%E5%AE%A2%E6%BA%90%E7%A0%81%E5%88%86%E4%BA%AB.html" target="_blank">教你20分钟做出2天健身餐</a><br></span><span>  2.<a class="is-size-6" href="/breaking-news/2019%E5%B9%B4%E5%9B%BD%E5%BA%8670%E5%91%A8%E5%B9%B4%E9%98%85%E5%85%B5%E5%AE%8C%E6%95%B4%E5%9B%BE%E6%96%87%E8%A7%A3%E8%AF%B4.html" target="_blank">2019年国庆70周年阅兵完整图文解说(收藏!)</a><br></span><span>  3.<a class="is-size-6" href="/theme/%E5%8D%9A%E5%AE%A2%E4%B8%ADgitalk%E6%9C%80%E6%96%B0%E8%AF%84%E8%AE%BA%E7%9A%84%E8%8E%B7%E5%8F%96.html" target="_blank">博客中gitalk最新文章的获取</a><br></span><span>  4.<a class="is-size-6" href="/law/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%88%91%E4%BA%8B%E8%AF%89%E8%AE%BC%E6%B3%95.html" target="_blank">中华人民共和国刑事诉讼法</a><br></span><span>  5.<a class="is-size-6" href="/database/mysql/mysql%E5%85%81%E8%AE%B8%E6%9C%80%E5%A4%A7sql%E8%AF%AD%E5%8F%A5%E9%95%BF%E5%BA%A6%E9%85%8D%E7%BD%AE.html" target="_blank">mysql允许最大sql语句长度配置</a><br></span><span>  6.<a class="is-size-6" href="/develop/github-gpg-failed-to-sign-the-data.html" target="_blank">github gpg failed to sign the data</a><br></span></div></div><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/social-share.js/1.0.16/css/share.min.css"><div class="social-share"></div><script src="https://cdnjs.loli.net/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script></article></div><div class="card"><div class="card-content"><h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3><div class="buttons is-centered"><a class="button is-info donate"><span class="icon is-small"><i class="fab fa-alipay"></i></span><span>支付宝</span><span class="qrcode"><img src="https://www.reef.run/images/pyment/alipayimg.jpg" alt="支付宝"></span></a><a class="button is-success donate"><span class="icon is-small"><i class="fab fa-weixin"></i></span><span>微信</span><span class="qrcode"><img src="https://www.reef.run/images/pyment/weipayimg.jpg" alt="微信"></span></a></div></div></div><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/tools/docker%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8.html"><i class="level-item fas fa-chevron-left"></i><span class="level-item">docker安装与使用</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/theme/%E5%8D%9A%E5%AE%A2%E6%8D%A2%E8%82%A4%E7%9A%84%E4%B8%80%E7%A7%8D%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F%E6%80%9D%E8%B7%AF.html"><span class="level-item">博客换肤的一种实现方式思路</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><!--!--><div class="card"><div class="card-content"><h3 class="title is-5">评论</h3><div id="comment-container"></div><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/gitalk/1.6.0/gitalk.css"><script> $.getScript('https://cdn.jsdelivr.net/gh/removeif/removeif.github.io@v3.0.5/js/gitalk.min.js', function () { 
             var gitalk = new Gitalk({
             language:'zh-CN',
             id: '905608cd2c9a99f760cbf79a32519287',
