@@ -105,11 +105,11 @@ function isNightRange(beginTime, endTime) {
     n.setHours(strn[0]);
     n.setMinutes(strn[1]);
 
-    console.log(n.getTime());
+    //console.log(n.getTime());
     if (n.getTime() - b.getTime() > 0 && n.getTime() - e.getTime() < 0) {
         return true;
     } else {
-        console.log("now Date is：" + n.getHours() + ":" + n.getMinutes() + "，is not Night！");
+        //console.log("now Date is：" + n.getHours() + ":" + n.getMinutes() + "，is not Night！");
         return false;
     }
 }
@@ -132,7 +132,7 @@ function ajaxReqForGitHubNoToken(url,call) {
         contentType: "application/json",  //推荐写这个
         dataType: "json",
         error: function () {
-            console.log('req error');
+            //console.log('req error');
         },
         success: function (data) {
             call(data);

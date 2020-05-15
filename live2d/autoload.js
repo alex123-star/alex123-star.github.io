@@ -12,4 +12,4 @@ try {
             initModel("/live2d/waifu-tips.json");
         }});
     }});
-} catch(err) { console.log("[Error] JQuery is not defined.") }
+} catch(err) { //console.log("[Error] JQuery is not defined.") }
