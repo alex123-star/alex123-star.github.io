@@ -25,7 +25,7 @@ function ajaxReqForGitHub(url, authorizationToken, call) {
         contentType: "application/json",  //推荐写这个
         dataType: "json",
         error: function () {
-            //console.log('req error');
+            console.log('req error');
         },
         success: function (data) {
             call(data);
@@ -144,7 +144,7 @@ function addCommentInfo(result, resultArr, item, endIndex, i, contentStr) {
 }
 
 function dealWithResultArr(resultArr) {
-    //console.log(resultArr);
+    console.log(resultArr);
     // 排序
     resultArr = resultArr.sort(function (a, b) {
         return b.date.localeCompare(a.date);
@@ -312,7 +312,7 @@ function loadIssueData(appId, appKey, userName, userRepo, isValine) {
                 loadCommentDataAndRender(authorizationToken);
             }
         } else {
-            //console.log("load cache data...");
+            console.log("load cache data...");
             // 渲染评论数据
             renderCommentData(COMMENT_ARR);
         }
@@ -333,7 +333,7 @@ function loadIssueData(appId, appKey, userName, userRepo, isValine) {
             }
         }
         console.clear();
-        //console.log("~~~~ 欢迎光临！记得有时间多来看看哦，https://www.reef.run/ ~~~~")
+        console.log("~~~~ 欢迎光临！记得有时间多来看看哦，https://www.reef.run/ ~~~~")
     }
         ,
         500
