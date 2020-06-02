@@ -712,7 +712,7 @@ function(t) {
 			n = m(o.x - i.left),
 			s = T(o.y - i.top);
 		w.
-	default.DEBUG_MOUSE_LOG && //console.log("onMouseMove device( x:" + t.clientX + " y:" + t.clientY + " ) view( x:" + n + " y:" + s + ")"), k = e, V = r, N.setPoint(n, s)
+	default.DEBUG_MOUSE_LOG && console.log("onMouseMove device( x:" + t.clientX + " y:" + t.clientY + " ) view( x:" + n + " y:" + s + ")"), k = e, V = r, N.setPoint(n, s)
 	}
 	function p(t) {
 		Y = !0;
@@ -729,7 +729,7 @@ function(t) {
 			n = m(o.x - i.left),
 			s = T(o.y - i.top);
 		w.
-	default.DEBUG_MOUSE_LOG && //console.log("onMouseDown device( x:" + t.clientX + " y:" + t.clientY + " ) view( x:" + n + " y:" + s + ")"), k = e, V = r, R.tapEvent(n, s)
+	default.DEBUG_MOUSE_LOG && console.log("onMouseDown device( x:" + t.clientX + " y:" + t.clientY + " ) view( x:" + n + " y:" + s + ")"), k = e, V = r, R.tapEvent(n, s)
 	}
 	function f(t) {
 		var i = C.getBoundingClientRect(),
@@ -745,14 +745,14 @@ function(t) {
 			n = m(o.x - i.left),
 			s = T(o.y - i.top);
 		w.
-	default.DEBUG_MOUSE_LOG && //console.log("onMouseMove device( x:" + t.clientX + " y:" + t.clientY + " ) view( x:" + n + " y:" + s + ")"), Y && (k = e, V = r, N.setPoint(n, s))
+	default.DEBUG_MOUSE_LOG && console.log("onMouseMove device( x:" + t.clientX + " y:" + t.clientY + " ) view( x:" + n + " y:" + s + ")"), Y && (k = e, V = r, N.setPoint(n, s))
 	}
 	function c() {
 		Y && (Y = !1), N.setPoint(0, 0)
 	}
 	function d() {
 		w.
-	default.DEBUG_LOG && //console.log("Set Session Storage."), sessionStorage.setItem("Sleepy", "1")
+	default.DEBUG_LOG && console.log("Set Session Storage."), sessionStorage.setItem("Sleepy", "1")
 	}
 	function g(t) {
 		if ("mousewheel" == t.type);
@@ -764,7 +764,7 @@ function(t) {
 			if ("button" in t && 0 != t.button) return
 		} else if ("mouseout" == t.type) {
 			w.
-		default.DEBUG_LOG && //console.log("Mouse out Window."), c();
+		default.DEBUG_LOG && console.log("Mouse out Window."), c();
 			var e = sessionStorage.getItem("SleepyTimer");
 			window.clearTimeout(e), e = window.setTimeout(d, 5e4), sessionStorage.setItem("SleepyTimer", e)
 		}
@@ -1130,7 +1130,7 @@ function(t) {
 							n = s.getPartsOpacity(h), n += e / r, n > 1 && (n = 1)
 						}
 					}
-					o < 0 && (//console.log("No _$wi _$q0/ _$U default[%s]", t[0]), o = 0, n = 1, s.loadParam(), s.setParamFloat(t[o], n), s.saveParam());
+					o < 0 && (console.log("No _$wi _$q0/ _$U default[%s]", t[0]), o = 0, n = 1, s.loadParam(), s.setParamFloat(t[o], n), s.saveParam());
 					for (var u = 0; u < t.length; u++) {
 						var h = i[u];
 						if (o == u) s.setPartsOpacity(h, n);
@@ -1325,7 +1325,7 @@ function(t) {
 						i._$Do < 0 && (i._$Do = r <= 0 ? -1 : i._$z2 + r)
 					}
 					var o = this._$V0;
-					o = o * (0 == this._$dP ? 1 : ht._$r2((e - i._$bs) / this._$dP)) * (0 == this._$eo || i._$Do < 0 ? 1 : ht._$r2((i._$Do - e) / this._$eo)), 0 <= o && o <= 1 || //console.log("### assert!! ### "), this.updateParamExe(t, e, o, i), i._$Do > 0 && i._$Do < e && (i._$9L = !0)
+					o = o * (0 == this._$dP ? 1 : ht._$r2((e - i._$bs) / this._$dP)) * (0 == this._$eo || i._$Do < 0 ? 1 : ht._$r2((i._$Do - e) / this._$eo)), 0 <= o && o <= 1 || console.log("### assert!! ### "), this.updateParamExe(t, e, o, i), i._$Do > 0 && i._$Do < e && (i._$9L = !0)
 				}
 			}, s.prototype.updateParamExe = function(t, i, e, r) {}, _._$8s = 0, _._$fT = new Object, _.start = function(t) {
 				var i = _._$fT[t];
@@ -1335,7 +1335,7 @@ function(t) {
 				if (null != i) {
 					var e = w.getSystemTimeMSec(),
 						r = e - i._$0S;
-					return //console.log(t + " : " + r + "ms"), r
+					return console.log(t + " : " + r + "ms"), r
 				}
 				return -1
 			}, _.end = function(t) {
@@ -1345,20 +1345,20 @@ function(t) {
 				}
 				return -1
 			}, _._$li = function(t, i) {
-				//console.log("_$li : " + t + "\n", i)
+				console.log("_$li : " + t + "\n", i)
 			}, _._$Ji = function(t, i) {
-				//console.log(t, i)
+				console.log(t, i)
 			}, _._$dL = function(t, i) {
-				//console.log(t, i), //console.log("\n")
+				console.log(t, i), console.log("\n")
 			}, _._$KL = function(t, i) {
-				for (var e = 0; e < i; e++) e % 16 == 0 && e > 0 ? //console.log("\n") : e % 8 == 0 && e > 0 && //console.log("  "), //console.log("%02X ", 255 & t[e]);
-				//console.log("\n")
+				for (var e = 0; e < i; e++) e % 16 == 0 && e > 0 ? console.log("\n") : e % 8 == 0 && e > 0 && console.log("  "), console.log("%02X ", 255 & t[e]);
+				console.log("\n")
 			}, _._$nr = function(t, i, e) {
-				//console.log("%s\n", t);
-				for (var r = i.length, o = 0; o < r; ++o) //console.log("%5d", i[o]), //console.log("%s\n", e), //console.log(",");
-				//console.log("\n")
+				console.log("%s\n", t);
+				for (var r = i.length, o = 0; o < r; ++o) console.log("%5d", i[o]), console.log("%s\n", e), console.log(",");
+				console.log("\n")
 			}, _._$Rb = function(t) {
-				//console.log("dump exception : " + t), //console.log("stack :: " + t.stack)
+				console.log("dump exception : " + t), console.log("stack :: " + t.stack)
 			}, h.prototype._$8P = function() {
 				return .5 * (this.x + this.x + this.width)
 			}, h.prototype._$6P = function() {
@@ -1488,7 +1488,7 @@ function(t) {
 				var h = s * n - _ * o;
 				if (0 == h) return null;
 				var l, $ = ((t - e) * n - (i - r) * o) / h;
-				return l = 0 != o ? (t - e - $ * s) / o : (i - r - $ * _) / n, isNaN(l) && (l = (t - e - $ * s) / o, isNaN(l) && (l = (i - r - $ * _) / n), isNaN(l) && (//console.log("a is NaN @UtVector#_$ni() "), //console.log("v1x : " + o), //console.log("v1x != 0 ? " + (0 != o)))), null == a ? new Array(l, $) : (a[0] = l, a[1] = $, a)
+				return l = 0 != o ? (t - e - $ * s) / o : (i - r - $ * _) / n, isNaN(l) && (l = (t - e - $ * s) / o, isNaN(l) && (l = (i - r - $ * _) / n), isNaN(l) && (console.log("a is NaN @UtVector#_$ni() "), console.log("v1x : " + o), console.log("v1x != 0 ? " + (0 != o)))), null == a ? new Array(l, $) : (a[0] = l, a[1] = $, a)
 			}, S.prototype._$8P = function() {
 				return this.x + .5 * this.width
 			}, S.prototype._$6P = function() {
@@ -1948,7 +1948,7 @@ function(t) {
 				return s
 			}, D.prototype._$zr = function(t, i, e) {
 				var r = 1 << e;
-				r + 1 > U._$Qb && //console.log("err 23245\n");
+				r + 1 > U._$Qb && console.log("err 23245\n");
 				for (var o = this._$Ob.length, n = 1, s = 1, _ = 0, a = 0; a < r; ++a) t[a] = 0;
 				for (var h = 0; h < o; ++h) {
 					var l = this._$Ob[h];
@@ -1973,9 +1973,9 @@ function(t) {
 						n = o._$N2(),
 						s = i % o._$N2(),
 						_ = o._$d2()[s];
-					//console.log("%s[%d]=%7.2f / ", o.getParamID(), s, _), i /= n
+					console.log("%s[%d]=%7.2f / ", o.getParamID(), s, _), i /= n
 				}
-				//console.log("\n")
+				console.log("\n")
 			}, D.prototype.getParamCount = function() {
 				return this._$Ob.length
 			}, D.prototype._$zs = function() {
@@ -2078,7 +2078,7 @@ function(t) {
 					o = t[3],
 					n = Math.sqrt(i * i + r * r),
 					s = i * o - e * r;
-				0 == n ? at._$so && //console.log("affine._$RT() / rt==0") : (t[0] = n, t[1] = s / n, t[2] = (r * o + i * e) / s, t[3] = Math.atan2(r, i))
+				0 == n ? at._$so && console.log("affine._$RT() / rt==0") : (t[0] = n, t[1] = s / n, t[2] = (r * o + i * e) / s, t[3] = Math.atan2(r, i))
 			}, F.prototype._$ho = function(t, i, e, r) {
 				var o = new Float32Array(6),
 					n = new Float32Array(6);
@@ -2114,7 +2114,7 @@ function(t) {
 										C._$D2.push(l), h++;
 										var $ = e[0];
 										if ($ < o) {
-											//console.log("_$n0 _$hi . @Live2DMotion loadMotion()\n");
+											console.log("_$n0 _$hi . @Live2DMotion loadMotion()\n");
 											break
 										}
 										o = $
@@ -2142,9 +2142,9 @@ function(t) {
 			}, C.prototype.dump = function() {
 				for (var t = 0; t < this.motions.length; t++) {
 					var i = this.motions[t];
-					//console.log("_$wL[%s] [%d]. ", i._$4P, i._$I0.length);
-					for (var e = 0; e < i._$I0.length && e < 10; e++) //console.log("%5.2f ,", i._$I0[e]);
-					//console.log("\n")
+					console.log("_$wL[%s] [%d]. ", i._$4P, i._$I0.length);
+					for (var e = 0; e < i._$I0.length && e < 10; e++) console.log("%5.2f ,", i._$I0[e]);
+					console.log("\n")
 				}
 			}, C.prototype.updateParamExe = function(t, i, e, r) {
 				for (var o = i - r._$z2, n = o * this._$D0 / 1e3, s = 0 | n, _ = n - s, a = 0; a < this.motions.length; a++) {
@@ -2185,7 +2185,7 @@ function(t) {
 				var t = new Float32Array(this.size);
 				return w._$jT(this._$P, 0, t, 0, this.size), t
 			}, B._$Fr = 0, B._$hs = 1, B._$ws = 100, B._$Ns = 101, B._$xs = 102, B._$us = 103, B._$qs = 104, B._$Ys = 105, U._$Ms = 1, U._$Qs = 2, U._$i2 = 0, U._$No = 2, U._$do = U._$Ms, U._$Ls = !0, U._$1r = 5, U._$Qb = 65, U._$J = 1e-4, U._$FT = .001, U._$Ss = 3, G._$o7 = 6, G._$S7 = 7, G._$s7 = 8, G._$77 = 9, G.LIVE2D_FORMAT_VERSION_V2_10_SDK2 = 10, G.LIVE2D_FORMAT_VERSION_V2_11_SDK2_1 = 11, G._$T7 = G.LIVE2D_FORMAT_VERSION_V2_11_SDK2_1, G._$Is = -2004318072, G._$h0 = 0, G._$4L = 23, G._$7P = 33, G._$uT = function(t) {
-				//console.log("_$bo :: _$6 _$mo _$E0 : %d\n", t)
+				console.log("_$bo :: _$6 _$mo _$E0 : %d\n", t)
 			}, G._$9o = function(t) {
 				if (t < 40) return G._$uT(t), null;
 				if (t < 50) return G._$uT(t), null;
@@ -2305,7 +2305,7 @@ function(t) {
 						try {
 							d = this._$Vs[g]
 						} catch (t) {
-							//console.log("_$li :: %s / %s \t\t\t\t@@_$fS\n", t.toString(), f.getDrawDataID().toString()), g = Math.floor(f._$zS(this, c) - o);
+							console.log("_$li :: %s / %s \t\t\t\t@@_$fS\n", t.toString(), f.getDrawDataID().toString()), g = Math.floor(f._$zS(this, c) - o);
 							continue
 						}
 						d == Y._$V2 ? this._$Ws[g] = p : this._$Er[d] = p, this._$Vs[g] = p
@@ -2510,7 +2510,7 @@ function(t) {
 				var i = new H(this);
 				return i._$Yr = new P, this._$32() && (i._$Wr = new P), i
 			}, z.prototype._$Nr = function(t, i) {
-				this != i._$GT() && //console.log("### assert!! ### ");
+				this != i._$GT() && console.log("### assert!! ### ");
 				var e = i;
 				if (this._$GS._$Ur(t)) {
 					var r = z._$gT;
@@ -2597,7 +2597,7 @@ function(t) {
 					e._$Yr.reflectX = _.reflectX, e._$Yr.reflectY = _.reflectY
 				}
 			}, z.prototype._$2b = function(t, i) {
-				this != i._$GT() && //console.log("### assert!! ### ");
+				this != i._$GT() && console.log("### assert!! ### ");
 				var e = i;
 				if (e._$hS(!0), this._$32()) {
 					var r = this.getTargetBaseDataID();
@@ -2623,10 +2623,10 @@ function(t) {
 					}
 				} else e.setTotalScale_notForClient(e._$Yr._$B0), e.setTotalOpacity(e.getInterpolatedOpacity())
 			}, z.prototype._$nb = function(t, i, e, r, o, n, s) {
-				this != i._$GT() && //console.log("### assert!! ### ");
+				this != i._$GT() && console.log("### assert!! ### ");
 				for (var _, a, h = i, l = null != h._$Wr ? h._$Wr : h._$Yr, $ = Math.sin(Lt._$bS * l._$qT), u = Math.cos(Lt._$bS * l._$qT), p = h.getTotalScale(), f = l.reflectX ? -1 : 1, c = l.reflectY ? -1 : 1, d = u * p * f, g = -$ * p * c, y = $ * p * f, m = u * p * c, T = l._$fL, P = l._$gL, S = o * s, v = n; v < S; v += s) _ = e[v], a = e[v + 1], r[v] = d * _ + g * a + T, r[v + 1] = y * _ + m * a + P
 			}, z.prototype._$Jr = function(t, i, e, r, o, n) {
-				i != e._$GT() && //console.log("### assert!! ### ");
+				i != e._$GT() && console.log("### assert!! ### ");
 				var s = z._$Lo;
 				z._$Lo[0] = r[0], z._$Lo[1] = r[1], i._$nb(t, e, s, s, 1, 0, 2);
 				for (var _ = z._$To, a = z._$Po, h = 1, l = 0; l < 10; l++) {
@@ -2634,7 +2634,7 @@ function(t) {
 					if (a[0] = r[0] - h * o[0], a[1] = r[1] - h * o[1], i._$nb(t, e, a, _, 1, 0, 2), _[0] -= s[0], _[1] -= s[1], 0 != _[0] || 0 != _[1]) return _[0] = -_[0], _[0] = -_[0], n[0] = _[0], void(n[1] = _[1]);
 					h *= .1
 				}
-				at._$so && //console.log("_$L0 to transform _$SP\n")
+				at._$so && console.log("_$L0 to transform _$SP\n")
 			}, H.prototype = new _t, W.prototype = new M, W._$ur = -2, W._$ES = 500, W._$wb = 2, W._$8S = 3, W._$os = 4, W._$52 = W._$ES, W._$R2 = W._$ES, W._$Sb = function(t) {
 				for (var i = t.length - 1; i >= 0; --i) {
 					var e = t[i];
@@ -2738,7 +2738,7 @@ function(t) {
 										$.push(u), l++;
 										var p = e[0];
 										if (p < o) {
-											//console.log("_$n0 _$hi . @Live2DMotion loadMotion()\n");
+											console.log("_$n0 _$hi . @Live2DMotion loadMotion()\n");
 											break
 										}
 										o = p - 1
@@ -2768,9 +2768,9 @@ function(t) {
 			}, J.prototype.dump = function() {
 				for (var t = 0; t < this.motions.length; t++) {
 					var i = this.motions[t];
-					//console.log("_$wL[%s] [%d]. ", i._$4P, i._$I0.length);
-					for (var e = 0; e < i._$I0.length && e < 10; e++) //console.log("%5.2f ,", i._$I0[e]);
-					//console.log("\n")
+					console.log("_$wL[%s] [%d]. ", i._$4P, i._$I0.length);
+					for (var e = 0; e < i._$I0.length && e < 10; e++) console.log("%5.2f ,", i._$I0[e]);
+					console.log("\n")
 				}
 			}, J.prototype.updateParamExe = function(t, i, e, r) {
 				for (var o = i - r._$z2, n = o * this._$D0 / 1e3, s = 0 | n, _ = n - s, a = 0; a < this.motions.length; a++) {
@@ -3160,7 +3160,7 @@ function(t) {
 				return e.setAttribute("width", t), e.setAttribute("height", i), e || _._$li("err : " + e), e
 			}, nt.dumpValues = function() {
 				for (var t = "", i = 0; i < arguments.length; i++) t += "[" + i + "]= " + arguments[i].toFixed(3) + " , ";
-				//console.log(t)
+				console.log(t)
 			}, st.prototype._$F0 = function(t) {
 				this._$TT = t._$_T(), this._$LT = t._$_T(), this._$FS = t._$_T(), this._$wL = t._$nP()
 			}, st.prototype.getMinValue = function() {
@@ -3240,11 +3240,11 @@ function(t) {
 				default:
 					alert("profile _$6 _$Ui : " + t)
 				}
-				arguments.length < 2 && (i = !0), i && //console.log("profile : " + t.PROFILE_NAME);
-				for (var e in t) at[e] = t[e], i && //console.log("  [" + e + "] = " + t[e])
+				arguments.length < 2 && (i = !0), i && console.log("profile : " + t.PROFILE_NAME);
+				for (var e in t) at[e] = t[e], i && console.log("  [" + e + "] = " + t[e])
 			}, at.init = function() {
 				if (at._$6b) {
-					//console.log("Live2D %s", at._$2s), at._$6b = !1;
+					console.log("Live2D %s", at._$2s), at._$6b = !1;
 					!0, at.initProfile()
 				}
 			}, at.getVersionStr = function() {
@@ -3335,13 +3335,13 @@ function(t) {
 				return i
 			}, $t.prototype._$Nr = function(t, i) {
 				var e = i;
-				if (this != e._$GT() && //console.log("### assert!! ### "), this._$GS._$Ur(t) && (W.prototype._$Nr.call(this, t, e), !e._$IS[0])) {
+				if (this != e._$GT() && console.log("### assert!! ### "), this._$GS._$Ur(t) && (W.prototype._$Nr.call(this, t, e), !e._$IS[0])) {
 					var r = $t._$gT;
 					r[0] = !1, v._$Vr(t, this._$GS, r, this._$d0, this._$Eo, e._$Cr, U._$i2, U._$No)
 				}
 			}, $t.prototype._$2b = function(t, i) {
 				try {
-					this != i._$GT() && //console.log("### assert!! ### ");
+					this != i._$GT() && console.log("### assert!! ### ");
 					var e = !1;
 					i._$IS[0] && (e = !0);
 					var r = i;
@@ -3358,7 +3358,7 @@ function(t) {
 					throw t
 				}
 			}, $t.prototype.draw = function(t, i, e) {
-				if (this != e._$GT() && //console.log("### assert!! ### "), !e._$IS[0]) {
+				if (this != e._$GT() && console.log("### assert!! ### "), !e._$IS[0]) {
 					var r = e,
 						o = this._$LP;
 					o < 0 && (o = 1);
@@ -3367,14 +3367,14 @@ function(t) {
 					t.setClipBufPre_clipContextForDraw(e.clipBufPre_clipContext), t._$WP(this.culling), t._$Uo(o, 3 * this._$Yo, this._$BP, s, this._$Qi, n, this._$6s, r)
 				}
 			}, $t.prototype.dump = function() {
-				//console.log("  _$yi( %d ) , _$d0( %d ) , _$Yo( %d ) \n", this._$LP, this._$d0, this._$Yo), //console.log("  _$Oi _$di = { ");
-				for (var t = 0; t < this._$BP.length; t++) //console.log("%5d ,", this._$BP[t]);
-				//console.log("\n  _$5i _$30");
+				console.log("  _$yi( %d ) , _$d0( %d ) , _$Yo( %d ) \n", this._$LP, this._$d0, this._$Yo), console.log("  _$Oi _$di = { ");
+				for (var t = 0; t < this._$BP.length; t++) console.log("%5d ,", this._$BP[t]);
+				console.log("\n  _$5i _$30");
 				for (var t = 0; t < this._$Eo.length; t++) {
-					//console.log("\n    _$30[%d] = ", t);
-					for (var i = this._$Eo[t], e = 0; e < i.length; e++) //console.log("%6.2f, ", i[e])
+					console.log("\n    _$30[%d] = ", t);
+					for (var i = this._$Eo[t], e = 0; e < i.length; e++) console.log("%6.2f, ", i[e])
 				}
-				//console.log("\n")
+				console.log("\n")
 			}, $t.prototype._$72 = function(t) {
 				return null == this._$5P ? null : this._$5P[t]
 			}, $t.prototype.getIndexArray = function() {
@@ -3482,11 +3482,11 @@ function(t) {
 			}, ct.prototype._$Zr = function(t) {
 				this._$eb = t
 			}, ct.prototype._$e = function() {
-				//console.log("-- _$R --\n");
+				console.log("-- _$R --\n");
 				for (var t = 0; t < this.motions.length; t++) {
 					var i = this.motions[t],
 						e = i._$w0;
-					//console.log("MotionQueueEnt[%d] :: %s\n", this.motions.length, e.toString())
+					console.log("MotionQueueEnt[%d] :: %s\n", this.motions.length, e.toString())
 				}
 			}, dt._$Gs = 0, dt.prototype.isFinished = function() {
 				return this._$9L
@@ -3729,7 +3729,7 @@ function(t) {
 					else for (var r = 0; r < t; ++r) o[r] = i[r];
 					return String.fromCharCode.apply(null, o)
 				} catch (t) {
-					//console.log("read utf8 / _$rT _$L0 !! : " + t)
+					console.log("read utf8 / _$rT _$L0 !! : " + t)
 				}
 			}, St.prototype._$cS = function() {
 				this._$zT();
@@ -3836,11 +3836,11 @@ function(t) {
 				for (var r = 0; r < e; r++) {
 					for (var o = 0; o < i; o++) {
 						var n = 2 * (o + r * i);
-						//console.log("(% 7.3f , % 7.3f) , ", t[n], t[n + 1])
+						console.log("(% 7.3f , % 7.3f) , ", t[n], t[n + 1])
 					}
-					//console.log("\n")
+					console.log("\n")
 				}
-				//console.log("\n")
+				console.log("\n")
 			}, Lt._$2S = Math.PI / 180, Lt._$bS = Math.PI / 180, Lt._$wS = 180 / Math.PI, Lt._$NS = 180 / Math.PI, Lt.PI_F = Math.PI, Lt._$kT = [0, .012368, .024734, .037097, .049454, .061803, .074143, .086471, .098786, .111087, .12337, .135634, .147877, .160098, .172295, .184465, .196606, .208718, .220798, .232844, .244854, .256827, .268761, .280654, .292503, .304308, .316066, .327776, .339436, .351044, .362598, .374097, .385538, .396921, .408243, .419502, .430697, .441826, .452888, .463881, .474802, .485651, .496425, .507124, .517745, .528287, .538748, .549126, .559421, .56963, .579752, .589785, .599728, .609579, .619337, .629, .638567, .648036, .657406, .666676, .675843, .684908, .693867, .70272, .711466, .720103, .72863, .737045, .745348, .753536, .76161, .769566, .777405, .785125, .792725, .800204, .807561, .814793, .821901, .828884, .835739, .842467, .849066, .855535, .861873, .868079, .874153, .880093, .885898, .891567, .897101, .902497, .907754, .912873, .917853, .922692, .92739, .931946, .936359, .940629, .944755, .948737, .952574, .956265, .959809, .963207, .966457, .96956, .972514, .97532, .977976, .980482, .982839, .985045, .987101, .989006, .990759, .992361, .993811, .995109, .996254, .997248, .998088, .998776, .999312, .999694, .999924, 1], Lt._$92 = function(t, i) {
 				var e = Math.atan2(t[1], t[0]),
 					r = Math.atan2(i[1], i[0]);
@@ -3943,31 +3943,31 @@ default = o;
 		for (var e = 0; e < this.models.length; e++) this.models[e].setDrag(t, i)
 	}, o.prototype.maxScaleEvent = function() {
 		$.
-	default.DEBUG_LOG && //console.log("Max scale event.");
+	default.DEBUG_LOG && console.log("Max scale event.");
 		for (var t = 0; t < this.models.length; t++) this.models[t].startRandomMotion($.
 	default.MOTION_GROUP_PINCH_IN, $.
 	default.PRIORITY_NORMAL)
 	}, o.prototype.minScaleEvent = function() {
 		$.
-	default.DEBUG_LOG && //console.log("Min scale event.");
+	default.DEBUG_LOG && console.log("Min scale event.");
 		for (var t = 0; t < this.models.length; t++) this.models[t].startRandomMotion($.
 	default.MOTION_GROUP_PINCH_OUT, $.
 	default.PRIORITY_NORMAL)
 	}, o.prototype.tapEvent = function(t, i) {
 		$.
-	default.DEBUG_LOG && //console.log("tapEvent view x:" + t + " y:" + i);
+	default.DEBUG_LOG && console.log("tapEvent view x:" + t + " y:" + i);
 		for (var e = 0; e < this.models.length; e++) this.models[e].hitTest($.
 	default.HIT_AREA_HEAD, t, i) ? ($.
-	default.DEBUG_LOG && //console.log("Tap face."), this.models[e].setRandomExpression()):
+	default.DEBUG_LOG && console.log("Tap face."), this.models[e].setRandomExpression()):
 		this.models[e].hitTest($.
 	default.HIT_AREA_BODY, t, i) ? ($.
-	default.DEBUG_LOG && //console.log("Tap body. models[" + e + "]"), this.models[e].startRandomMotion($.
+	default.DEBUG_LOG && console.log("Tap body. models[" + e + "]"), this.models[e].startRandomMotion($.
 	default.MOTION_GROUP_TAP_BODY, $.
 	default.PRIORITY_NORMAL)) : this.models[e].hitTestCustom("head", t, i) ? ($.
-	default.DEBUG_LOG && //console.log("Tap face."), this.models[e].startRandomMotion($.
+	default.DEBUG_LOG && console.log("Tap face."), this.models[e].startRandomMotion($.
 	default.MOTION_GROUP_FLICK_HEAD, $.
 	default.PRIORITY_NORMAL)) : this.models[e].hitTestCustom("body", t, i) && ($.
-	default.DEBUG_LOG && //console.log("Tap body. models[" + e + "]"), this.models[e].startRandomMotion($.
+	default.DEBUG_LOG && console.log("Tap body. models[" + e + "]"), this.models[e].startRandomMotion($.
 	default.MOTION_GROUP_TAP_BODY, $.
 	default.PRIORITY_NORMAL));
 		return !0
@@ -4123,7 +4123,7 @@ default = o;
 		if (e == h.
 	default.PRIORITY_FORCE) this.mainMotionManager.setReservePriority(e);
 		else if (!this.mainMotionManager.reserveMotion(e)) return void(h.
-	default.DEBUG_LOG && //console.log("Motion is running."));
+	default.DEBUG_LOG && console.log("Motion is running."));
 		var o, n = this;
 		null == this.motions[t] ? this.loadMotion(null, this.modelHomeDir + r, function(r) {
 			o = r, n.setFadeInFadeOut(t, i, e, o)
@@ -4131,17 +4131,17 @@ default = o;
 	}, o.prototype.setFadeInFadeOut = function(t, i, e, r) {
 		var o = this.modelSetting.getMotionFile(t, i);
 		if (r.setFadeIn(this.modelSetting.getMotionFadeIn(t, i)), r.setFadeOut(this.modelSetting.getMotionFadeOut(t, i)), h.
-	default.DEBUG_LOG && //console.log("Start motion : " + o), null == this.modelSetting.getMotionSound(t, i)) this.mainMotionManager.startMotionPrio(r, e);
+	default.DEBUG_LOG && console.log("Start motion : " + o), null == this.modelSetting.getMotionSound(t, i)) this.mainMotionManager.startMotionPrio(r, e);
 		else {
 			var n = this.modelSetting.getMotionSound(t, i),
 				s = document.createElement("audio");
 			s.src = this.modelHomeDir + n, h.
-		default.DEBUG_LOG && //console.log("Start sound : " + n), s.play(), this.mainMotionManager.startMotionPrio(r, e)
+		default.DEBUG_LOG && console.log("Start sound : " + n), s.play(), this.mainMotionManager.startMotionPrio(r, e)
 		}
 	}, o.prototype.setExpression = function(t) {
 		var i = this.expressions[t];
 		h.
-	default.DEBUG_LOG && //console.log("Expression : " + t), this.expressionManager.startMotion(i, !1)
+	default.DEBUG_LOG && console.log("Expression : " + t), this.expressionManager.startMotion(i, !1)
 	}, o.prototype.draw = function(t) {
 		$.
 	default.push(), $.
