@@ -1295,8 +1295,8 @@
                                         $.getJSON("https://v1.hitokoto.cn/?c=d", function (data) {
                                             if (data) {
                                                 $('#hitokoto').html("");
-                                                $('#hitokoto').append("<strong style='color: #3273dc;'>" + data.hitokoto + "</strong>" +
-                                                    "<p>" + "来源《" + data.from + "》</p><p>提供者-" + data.creator + "</p>");
+                                                $('#hitokoto').append("<strong style='color: #3273dc;'>" + data[i].hitokoto + "</strong>" +
+                                                    "<p>" + "来源《" + data[i].from + "》</p><p>提供者-" + data[i].creator + "</p>");
                                             }
                                         });
                                     }
